@@ -8,7 +8,7 @@ if($seasonid != "")
 	while($row = mysql_fetch_object($sqlresult))
 		{
 		$sqlkey = $row->key;
-		$sqltime = $row->expire;
+		$sqltime = $row->zeit;
 		}
 
 

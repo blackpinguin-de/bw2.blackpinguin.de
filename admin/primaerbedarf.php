@@ -52,8 +52,8 @@ visibility:hidden;
 <body>
 <h1>Prim&auml;rbedarfsanalyse</h1>
 <?php
-include("../inhalt/config.php");
-include("../../funktionen.php");
+include_once("../inhalt/config.php");
+include_once("/rcl/www/funktionen.php");
 
 $interval_perioden = (int) get("n");
 $interval_length = (int) get("m");

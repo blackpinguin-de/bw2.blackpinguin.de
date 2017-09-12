@@ -1,16 +1,21 @@
 ﻿<?php 
 $kdnr=$headeruserid;
 
+$artikelnr = [];
+$artikelcount = [];
+$edartikelnr = [];
+$edartikelcount = [];
+
 
 if($kdnr!="")
 {
-$artikelnr = $_POST["artikelnr"];
-$artikelcount = $_POST["artikelcount"];
+$artikelnr = ( isset($_POST["artikelnr"]) ? (array) $_POST["artikelnr"] : [] );
+$artikelcount = ( isset($_POST["artikelcount"]) ? (array) $_POST["artikelcount"] : [] );
 
 $wkorbcount=0;
-for($i=0;$i<count($artikelnr);$i++)
+for ($i = 0 ; $i < count($artikelnr) ; $i++)
 	{
-	if($artikelcount[$i]!=0)
+	if ($artikelcount[$i] != 0)
 		{
 		$abfrage = "REPLACE INTO `warenkorb`";
 		$abfrage .= " VALUES('".mysql_real_escape_string($artikelnr[$i])."','$kdnr','".mysql_real_escape_string($artikelcount[$i])."')";
@@ -18,7 +23,7 @@ for($i=0;$i<count($artikelnr);$i++)
 		$wkorbcount++;
 		}
 	}
-if($wkorbcount!=0)
+	if($wkorbcount != 0)
 	{
 	echo "<br>$wkorbcount Artikel hinzugefügt.<br>";
 	}
@@ -27,8 +32,8 @@ if($wkorbcount!=0)
 
 
 
-$edartikelnr = $_POST["edartikelnr"];
-$edartikelcount = $_POST["edartikelcount"];
+$edartikelnr = ( isset($_POST["edartikelnr"]) ? $_POST["edartikelnr"] : [] );
+$edartikelcount = ( isset($_POST["edartikelcount"]) ? $_POST["edartikelcount"] : [] );
 
 if(count($edartikelnr)>0&&count($edartikelcount)>0&&count($edartikelnr)==count($edartikelcount))
 	{

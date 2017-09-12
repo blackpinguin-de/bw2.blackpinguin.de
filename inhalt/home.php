@@ -25,21 +25,21 @@ function searchClick(){
 
 
 <!-- ANGEBOTE Start -->
-<a class="angebot" id="ang1" href="ban1.php<?php if($seasonid!=""&&go!="inhalt/logout.php"){echo "?season=$seasonid";}?>">
+<a class="angebot" id="ang1" href="ban1.php<?php if($seasonid!="" && $go != "inhalt/logout.php"){echo "?season=$seasonid";}?>">
 <span class="angebot">Assassin's Creed</span><br>
 <img src="artikel/16.jpg" alt="Assassins Creed" align="left">
 Reise im 12. Jahrhundert als Assassine Altaïr durch das Heilige Land und ermeuchel Herscher jener Zeit die Teil einer geheimen Verschwörung sind.<br><br>
 <p class="angebot">25.95¹ €</p>
 </a>
 
-<a class="angebot" id="ang2" href="ban2.php<?php if($seasonid!=""&&go!="inhalt/logout.php"){echo "?season=$seasonid";}?>">
+<a class="angebot" id="ang2" href="ban2.php<?php if($seasonid!="" && $go!="inhalt/logout.php"){echo "?season=$seasonid";}?>">
 <span class="angebot">Wrath of the Lichking</span><br>
 <img src="artikel/17.jpg" alt="Wrath of the Lich King" align="left">
 Das 3. AddOn zum erfolgreichsten MMORPG aller Zeiten, World of Warcraft, mit Abenteuern in Nordrend.<br><br><br>
 <p class="angebot">999.95¹ €</p>
 </a>
 
-<a class="angebot" id="ang3" href="ban3.php<?php if($seasonid!=""&&go!="inhalt/logout.php"){echo "?season=$seasonid";}?>">
+<a class="angebot" id="ang3" href="ban3.php<?php if($seasonid!="" && $go!="inhalt/logout.php"){echo "?season=$seasonid";}?>">
 <span class="angebot">Fritz &amp; Fertig 2</span><br>
 <img src="artikel/13.jpg" alt="Fritz &amp; Fertig 2" align="left">
 In dieser wunderschönen und einfachen Schachlernsoftware werden auch sie ein echter Kasparow.<br><br><br>
@@ -47,7 +47,7 @@ In dieser wunderschönen und einfachen Schachlernsoftware werden auch sie ein ec
 </a>
 
 
-<a class="angebot" id="ang4" href="ban4.php<?php if($seasonid!=""&&go!="inhalt/logout.php"){echo "?season=$seasonid";}?>">
+<a class="angebot" id="ang4" href="ban4.php<?php if($seasonid!="" && $go!="inhalt/logout.php"){echo "?season=$seasonid";}?>">
 <span class="angebot">Call of Duty 4</span><br>
 <img src="artikel/1.jpg" alt="Call of Duty 4" align="left">
 Spielen Sie in einer nahen fiktiven Zukunft und verhindern Sie die finsteren Pläne von bösen Terroristen.<br><br><br>

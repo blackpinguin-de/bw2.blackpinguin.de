@@ -5,8 +5,8 @@
 
 
 <?php
-include("../inhalt/config.php");
-include("../preisfunktion.php");
+include_once("../inhalt/config.php");
+include_once("../preisfunktion.php");
 
 function stueckliste($artnr, $artname, $menge, $dispo)
 {

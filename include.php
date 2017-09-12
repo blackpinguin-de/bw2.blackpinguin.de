@@ -87,5 +87,5 @@ if( $content == "" ) //Wenn keine der login-exklusiven Seiten
 		}
 	}
 
-include($content);
+include_once($content);
 ?>

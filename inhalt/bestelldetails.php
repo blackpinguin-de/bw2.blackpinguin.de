@@ -8,7 +8,7 @@ var a_capacity=new Array();
 if($seasonid!="")
 {
 $kdnr=$headeruserid;
-$bestell_nr=mysql_real_escape_string($_GET['id']);
+$bestell_nr = (int) get('id');
 
 $abfrage1  = " SELECT `bestell_art` ba, `bestell_datum` bd, `bezahlt` bb ";
 $abfrage1 .= " FROM `bestellung` ";
@@ -44,8 +44,8 @@ while($row3 = mysql_fetch_object($ergebnis3))
 	$einzelpreis=$row3->ap;
 	$menge=$row3->am;
 
-	echo "a_nr[",$i,"]=\"",$anr,"\";\n";	
-	echo "a_name[",$i,"]=decodeURIComponent(\"",$aname,"\");\n";	
+	echo "a_nr[",$i,"]=\"",$anr,"\";\n";
+	echo "a_name[",$i,"]=decodeURIComponent(\"",$aname,"\");\n";
 	echo "a_preis[",$i,"]=\"",$einzelpreis,"\";\n";
 	echo "a_capacity[",$i,"]=\"",$menge,"\";\n";
 	$i=$i+1;

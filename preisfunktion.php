@@ -1,5 +1,5 @@
 <?php
-//include("inhalt/config.php");
+include_once("inhalt/config.php");
 
 function  anz_unter( $artikel_nr ) {
 $sql = " SELECT * FROM `struktur` s WHERE `s`.`ober_id` = '$artikel_nr' ";

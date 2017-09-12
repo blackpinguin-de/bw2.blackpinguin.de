@@ -1,8 +1,16 @@
 ﻿<script language="JavaScript">
 function checkreg()
 {
-if(f.ed_user.value!=""&&f.ed_passwd.value!=""&&f.ed_passwdw.value!=""&&f.ed_firstname.value!=""&&f.ed_lastname.value!=""&&f.ed_add.value!=""&&f.ed_plz.value!=""&&f.ed_ort.value!=""&&f.ed_land.value!="")
-	{
+if ( f.ed_user.value != ""
+  && f.ed_passwd.value != ""
+  && f.ed_passwdw.value != ""
+  && f.ed_firstname.value != ""
+  && f.ed_lastname.value != ""
+  && f.ed_add.value != ""
+  && f.ed_plz.value != ""
+  &&f.ed_ort.value != ""
+  && f.ed_land.value != ""
+)	{
 	if(f.ed_passwd.value==f.ed_passwdw.value)
 		{
 		return true;
@@ -28,7 +36,7 @@ else
 
 <?php
 
-if(mysql_real_escape_string($_POST['ed_user'])=="")
+if(post('ed_user')=="")
 {
 echo "<form name=\"f\" action=\"?site=register\" method=\"post\" onsubmit=\"return checkreg()\">";
 echo "<table align=\"center\" width=\"620\">";
@@ -48,15 +56,15 @@ echo "<tr><td colspan=\"2\" align=\"center\"><input type=\"submit\" name=\"but1\
 
 else
 {
-$ch_user=mysql_real_escape_string($_POST['ed_user']);
-$ch_pass=mysql_real_escape_string($_POST['ed_passwd']);
-$ch_email=mysql_real_escape_string($_POST['ed_email']);
-$ch_vorname=mysql_real_escape_string($_POST['ed_firstname']);
-$ch_nachname=mysql_real_escape_string($_POST['ed_lastname']);
-$ch_add=mysql_real_escape_string($_POST['ed_add']);
-$ch_plz=mysql_real_escape_string($_POST['ed_plz']);
-$ch_ort=mysql_real_escape_string($_POST['ed_ort']);
-$ch_land=mysql_real_escape_string($_POST['ed_land']);
+$ch_user     = post('ed_user');
+$ch_pass     = post('ed_passwd');
+$ch_email    = post('ed_email');
+$ch_vorname  = post('ed_firstname');
+$ch_nachname = post('ed_lastname');
+$ch_add  = post('ed_add');
+$ch_plz  = post('ed_plz');
+$ch_ort  = post('ed_ort');
+$ch_land = post('ed_land');
 
 $fehler=false;
 $sqlquery = "SELECT `name` FROM `kunden`";

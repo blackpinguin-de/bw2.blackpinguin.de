@@ -1,6 +1,4 @@
 ﻿<?php 
-//$search = mysql_real_escape_string($_POST["search"]);
-//if($search==""){$search = mysql_real_escape_string($_GET["search"]);}
 $search = post("search");
 if($search==""){$search = get("search");}
 ?>
@@ -39,18 +37,9 @@ function searchClick(){
         $maxpages = ceil($postcount/$pageacount);
 
 		//welche Seite anzeigen?
-        $fakepage=mysql_real_escape_string($_GET["page"]);
-
 		//keine Seite -> Seite 1
-        if($fakepage=="")
-                {
-                $page = 1;
-                }
-        else
-                {
-                $page = $fakepage;
-                }
-        $pageb=$page;
+        $page = ((int) get("page")) ?: 1;
+        $pageb = $page;
 
 		//Seitennummerierung
 		if($maxpages>1)

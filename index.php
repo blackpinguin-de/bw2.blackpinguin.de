@@ -1,19 +1,20 @@
 ﻿<?php
 //mysql-verbindung und loginscript includen
-//include("funktionen.php");
-include("inhalt/config.php");
-include("login.php");
+include_once("/rcl/www/funktionen.php");
+include_once("inhalt/config.php");
+include_once("login.php");
 
 //include script Teil 1
-$getsite=mysql_real_escape_string($_GET["site"]);
-if($getsite!="")
+$getsite = get("site");
+$go = "";
+if ($getsite != "")
 	{
 	$go  = "inhalt/";
 	$go .= $getsite;
 	$go .= ".php";
-	if (!file_exists($go)) 
+	if (! file_exists($go))
 		{
-		if($seasonid=="")
+		if ($seasonid == "")
 			{
 			header("Location: index.php?site=404");
 			}
@@ -94,7 +95,7 @@ var go=<?php echo "\"",$go,"\""; ?>;
 </div>
 
 <div style="left:160;top:130;width:605;position:absolute;text-align:left;" class="rahmen">
-<!-- Include Script Teil 2--> <?php include("include.php"); ?>
+<!-- Include Script Teil 2--> <?php include_once("include.php"); ?>
 </div>
 </div>
 

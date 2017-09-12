@@ -8,17 +8,17 @@ var preis=0;
 var liefer=new Array(6);
 var rechnung=new Array(6);
 
-<?php 
+<?php
 $kdnr=$headeruserid;
 
-if($kdnr!="")
+if($kdnr != "")
 {
-$artikelnr = $_POST["artikelnr"];
-$artikelname = $_POST["artikelname"];
-$artikelpreis = $_POST["artikelpreis"];
-$artikelcount = $_POST["artikelcount"];
+$artikelnr = (array) $_POST["artikelnr"];
+$artikelname = (array) $_POST["artikelname"];
+$artikelpreis = (array) $_POST["artikelpreis"];
+$artikelcount = (array) $_POST["artikelcount"];
 
-for($i=0;$i<count($artikelnr);$i++)
+for($i=0 ; $i < count($artikelnr) ; $i++)
 	{
 	echo "a_nr[",$i,"]=\"",mysql_real_escape_string($artikelnr[$i]),"\";\n";
 	echo "a_name[",$i,"]=\"",mysql_real_escape_string($artikelname[$i]),"\";\n";
@@ -27,25 +27,22 @@ for($i=0;$i<count($artikelnr);$i++)
 	}
 }
 
-echo "var zahlungsart=\"",mysql_real_escape_string($_POST['artdzahlung']),"\";\n";
-echo "var rwielo=\"",mysql_real_escape_string($_POST['rwiel']),"\";\n";
+echo "var zahlungsart=\"",post('artdzahlung'),"\";\n";
+echo "var rwielo=\"",post('rwiel'),"\";\n";
 
-echo "rechnung[0]=\"",mysql_real_escape_string($_POST['ed_r_firstname']),"\";\n";  
-echo "rechnung[1]=\"",mysql_real_escape_string($_POST['ed_r_lastname']),"\";\n"; 
-echo "rechnung[2]=\"",mysql_real_escape_string($_POST['ed_r_land']),"\";\n";
-echo "rechnung[3]=\"",mysql_real_escape_string($_POST['ed_r_ort']),"\";\n"; 
-echo "rechnung[4]=\"",mysql_real_escape_string($_POST['ed_r_plz']),"\";\n";
-echo "rechnung[5]=\"",mysql_real_escape_string($_POST['ed_r_add']),"\";\n"; 
+echo "rechnung[0]=\"",post('ed_r_firstname'),"\";\n";
+echo "rechnung[1]=\"",post('ed_r_lastname'),"\";\n";
+echo "rechnung[2]=\"",post('ed_r_land'),"\";\n";
+echo "rechnung[3]=\"",post('ed_r_ort'),"\";\n";
+echo "rechnung[4]=\"",post('ed_r_plz'),"\";\n";
+echo "rechnung[5]=\"",post('ed_r_add'),"\";\n";
 
-echo "liefer[0]=\"",mysql_real_escape_string($_POST['ed_l_firstname']),"\";\n"; 
-echo "liefer[1]=\"",mysql_real_escape_string($_POST['ed_l_lastname']),"\";\n"; 
-echo "liefer[2]=\"",mysql_real_escape_string($_POST['ed_l_land']),"\";\n";
-echo "liefer[3]=\"",mysql_real_escape_string($_POST['ed_l_ort']),"\";\n"; 
-echo "liefer[4]=\"",mysql_real_escape_string($_POST['ed_l_plz']),"\";\n";
-echo "liefer[5]=\"",mysql_real_escape_string($_POST['ed_l_add']),"\";\n";
-
-
-
+echo "liefer[0]=\"",post('ed_l_firstname'),"\";\n";
+echo "liefer[1]=\"",post('ed_l_lastname'),"\";\n";
+echo "liefer[2]=\"",post('ed_l_land'),"\";\n";
+echo "liefer[3]=\"",post('ed_l_ort'),"\";\n";
+echo "liefer[4]=\"",post('ed_l_plz'),"\";\n";
+echo "liefer[5]=\"",post('ed_l_add'),"\";\n";
 
 
 ?>

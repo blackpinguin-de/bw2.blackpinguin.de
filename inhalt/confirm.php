@@ -8,8 +8,8 @@ $kdnr=$headeruserid;
 $thistime=time();$datum=date("Y-m-d H:i:s",$thistime);
 $zahlungsart = post("artdzahlung");
 
-$arechnung = $_POST["arechnung"]; //array
-$aliefer   = $_POST["aliefer"]; //array
+$arechnung = (array) $_POST["arechnung"]; //array
+$aliefer   = (array) $_POST["aliefer"]; //array
 
 for($i=0;$i<6;$i++)
 	{
@@ -38,13 +38,13 @@ while($row = mysql_fetch_object($ergb))
 
 
 
-$artikelnr = $_POST["artikelnr"]; //array
-$artikelpreis = $_POST["artikelpreis"]; //array
-$artikelcount = $_POST["artikelcount"]; //array
+$artikelnr = (array) $_POST["artikelnr"]; //array
+$artikelpreis = (array) $_POST["artikelpreis"]; //array
+$artikelcount = (array) $_POST["artikelcount"]; //array
 $total = 0;
 $gaitems = "";
 
-for($i=0;$i<count($artikelnr);$i++)
+for($i=0 ; $i < count($artikelnr) ; $i++)
 	{
 	$nr = mysql_real_escape_string($artikelnr[$i]);
 	$preis = mysql_real_escape_string($artikelpreis[$i]);

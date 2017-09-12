@@ -1,22 +1,11 @@
 ﻿<?php
 
-$host="localhost";
-$dbselect="blackpinguin_shop";
-$user="bp_shop";
-$pswd="ZCs-cf861KZ7-buGmuk8"; //passwort entfernt
+include_once("/rcl/www/funktionen.php");
 
-$verbindung = @mysql_connect($host, $user, $pswd);
+if ($err = mysql_init("localhost", "aehtml_shop", "ZCs-cf861KZ7-buGmuk8", "aehtml_shop")) {
+    die("<h1>MySQL-Error</h1>" . $err);
+}
 
-if(!$verbindung)
-	{
-	die("<h1>MySQL-Error</h1>".mysql_error());
-	}
+$verbindung = $rcl->mysqli();
 
-@mysql_select_db($dbselect, $verbindung);
-@mysql_query("set names 'utf8';");
-
-$host="";
-$dbselect="";
-$user="";
-$pswd="";
 ?>

@@ -1,21 +1,25 @@
 ﻿<?php
-include("../funktionen.php");
-include("preisfunktion.php");
-$fakedseason=mysql_real_escape_string($_GET["season"]);
+include_once("/rcl/www/funktionen.php");
+include_once("preisfunktion.php");
+$fakedseason = get("season");
+$seasonid = "";
+$loginerror = 0;
+$sqltime = 0;
+$sqlseasonuserid = 0;
 
 // wenn season übergeben wird, gucken ob existiert, gucken ob nicht abgelaufen, evtl löschen, zeit aktualisieren
 if($fakedseason != "")
         {
-        $thistime=time();
-        $seasonid=$fakedseason;
+        $thistime = time();
+        $seasonid = $fakedseason;
         $sqlquery = "SELECT * FROM `season`";
         $sqlresult = mysql_query($sqlquery, $verbindung);
         while($row = mysql_fetch_object($sqlresult))
                 {
                 if($seasonid==$row->key)
                         {
-                        $sqltime=$row->zeit;
-                        $sqlseasonuserid=$row->userid;
+                        $sqltime = $row->zeit;
+                        $sqlseasonuserid = $row->userid;
                         }
                 }
         if((strtotime($sqltime))<$thistime)
@@ -37,8 +41,8 @@ if($fakedseason != "")
 //wenn nicht übergeben aber login informationen -> usergucken, passwort gucken, vergleichen, fehlermeldungen etc.
 if($fakedseason == "")
         {
-        $fakeuser=mysql_real_escape_string($_POST["p_user"]);
-        $fakepass=mysql_real_escape_string($_POST["p_pass"]);
+        $fakeuser = post("p_user");
+        $fakepass = post("p_pass");
         if($fakeuser != "" || $fakepass != "")
                 {
                 $user = $fakeuser;

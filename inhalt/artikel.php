@@ -2,7 +2,7 @@
 var a_artikel=new Array(4);
 var a_zusammen=new Array();
 <?php
-$artikelnr=mysql_real_escape_string($_GET['nr']);
+$artikelnr = (int) get('nr');
 
 $abfrage1 = "SELECT * FROM `artikel` WHERE `artikel_nr` = '$artikelnr' ";
 $ergebnis1 = mysql_query($abfrage1, $verbindung);

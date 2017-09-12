@@ -1,7 +1,7 @@
 <?php
-include("WarehouseInfo_inc.php");
-include("HTMLFunctionen_inc.php");
-include("BerechProceduren_inc.php");
+include_once("WarehouseInfo_inc.php");
+include_once("HTMLFunctionen_inc.php");
+include_once("BerechProceduren_inc.php");
 
 //Grenzen der Einzelnen Gütter
 $ConstRangGrenzen = array(20, 50); //muss < 100 sein den rest sind immer C- Waren

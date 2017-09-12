@@ -1,29 +1,29 @@
 ﻿<script type="text/javascript" language="JavaScript">
-var liefer=new Array(6);
-var rechnung=new Array(6);
+var liefer = new Array(6);
+var rechnung = new Array(6);
 
 <?php
 $kdnr=$headeruserid;
 
 
 
-$profilseite = mysql_real_escape_string($_POST['profilseite']);
+$profilseite = post('profilseite');
 if($profilseite!="")
 {
 
-$email = mysql_real_escape_string($_POST['ed_email']);
-$r_firstname = mysql_real_escape_string($_POST['ed_r_firstname']);
-$l_firstname = mysql_real_escape_string($_POST['ed_l_firstname']);
-$r_lastname = mysql_real_escape_string($_POST['ed_r_lastname']);
-$l_lastname = mysql_real_escape_string($_POST['ed_l_lastname']);
-$r_add = mysql_real_escape_string($_POST['ed_r_add']);
-$l_add = mysql_real_escape_string($_POST['ed_l_add']);
-$r_plz = mysql_real_escape_string($_POST['ed_r_plz']);
-$l_plz = mysql_real_escape_string($_POST['ed_l_plz']);
-$r_ort = mysql_real_escape_string($_POST['ed_r_ort']);
-$l_ort = mysql_real_escape_string($_POST['ed_l_ort']);
-$r_land = mysql_real_escape_string($_POST['ed_r_land']);
-$l_land = mysql_real_escape_string($_POST['ed_l_land']);
+$email = post('ed_email');
+$r_firstname = post('ed_r_firstname');
+$l_firstname = post('ed_l_firstname');
+$r_lastname = post('ed_r_lastname');
+$l_lastname = post('ed_l_lastname');
+$r_add = post('ed_r_add');
+$l_add = post('ed_l_add');
+$r_plz = post('ed_r_plz');
+$l_plz = post('ed_l_plz');
+$r_ort = post('ed_r_ort');
+$l_ort = post('ed_l_ort');
+$r_land = post('ed_r_land');
+$l_land = post('ed_l_land');
 
 
 $abfrage = "UPDATE `kunden` SET 

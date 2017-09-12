@@ -12,8 +12,8 @@ var a_dispo=new Array();
 var a_menge=new Array();
 var a_umsatz=new Array();
 <?php
-include("../inhalt/config.php");
-include("../preisfunktion.php");
+include_once("../inhalt/config.php");
+include_once("../preisfunktion.php");
 
 
 $abfrage  = " SELECT `a`.`artikel_nr`, `a`.`artikel_name`, `a`.`artikel_einzelpreis`, `a`.`artikel_dispositionsstufe`, ";

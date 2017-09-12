@@ -1,6 +1,6 @@
 <?php
-include("../inhalt/config.php");
-include("../preisfunktion.php");
+include_once("../inhalt/config.php");
+include_once("../preisfunktion.php");
 $sql  = " SELECT `a`.`artikel_nr` nr, ";
 $sql .=     " `a`.`artikel_einzelpreis` preis, ";
 $sql .=     " `a`.`artikel_dispositionsstufe` dispo, ";
