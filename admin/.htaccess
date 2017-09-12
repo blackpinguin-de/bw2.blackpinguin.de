@@ -1,0 +1,6 @@
+options +indexes
+
+AuthName "Authentifizierung"
+AuthType Basic
+AuthUserFile /rcl/www/.htusers
+require user istador
