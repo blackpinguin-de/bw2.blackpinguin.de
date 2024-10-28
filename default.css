@@ -1,0 +1,15 @@
+/* ::::: https://shop.blackpinguin.de/layout.css ::::: */
+
+* { font-family: Arial; text-decoration: none; }
+body { background: rgb(102, 102, 102) none repeat scroll 0% 0%; }
+div.rahmen { font-size: 11pt; background: rgb(73, 149, 201) none repeat scroll 0% 0%; border-style: ridge; border-color: white; text-align: center; }
+a { color: white; font-weight: bold; }
+img { border: 0px none; }
+.angebot { text-align: left; }
+a.angebot { display: block; color: white; border-style: ridge; border-color: white; background: rgb(3, 50, 94) none repeat scroll 0% 0%; font-size: 12px; }
+span.angebot { font-size: 12pt; font-weight: bold; color: white; }
+p.angebot { font-size: 14pt; font-weight: bold; color: red; text-align: right; }
+#ang1 { top: 360px; left: 15px; width: 280px; height: 150px; position: absolute; }
+#ang2 { top: 360px; left: 305px; width: 280px; height: 150px; position: absolute; }
+#ang3 { top: 520px; left: 15px; width: 280px; height: 150px; position: absolute; }
+#ang4 { top: 520px; left: 305px; width: 280px; height: 150px; position: absolute; }

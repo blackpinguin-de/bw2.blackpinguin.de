@@ -1,0 +1,8 @@
+/* ::::: https://shop.blackpinguin.de/layout.css ::::: */
+
+* { font-family: Arial; text-decoration: none; }
+body { background: rgb(102, 102, 102) none repeat scroll 0% 0%; }
+div.rahmen { font-size: 11pt; background: rgb(73, 149, 201) none repeat scroll 0% 0%; border-style: ridge; border-color: white; text-align: center; }
+a { color: white; font-weight: bold; }
+img { border: 0px none; }
+div.shop { border-style: ridge; border-color: white; color: white; background: rgb(3, 50, 94) none repeat scroll 0% 0%; text-align: center; vertical-align: middle; }

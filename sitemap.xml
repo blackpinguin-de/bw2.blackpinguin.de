@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../../sitemap.xsl" type="text/xsl" media="all"?>
+<site>
+<page file="index.html" text="shop.blackpinguin.de" title="GameZ4you">
+<page file="default.html" text="Home" title="GameZ4you"/>
+<page file="default_001.html" text="Shop" title="GameZ4you">
+<page file="default_006.html" text="2" title="GameZ4you">
+<page file="default_016.html" text="1" title="GameZ4you"/>
+<page file="default_017.html" text="" title="GameZ4you"/>
+<page file="default_018.html" text="" title="GameZ4you"/>
+<page file="default_019.html" text="" title="GameZ4you"/>
+<page file="default_020.html" text="" title="GameZ4you"/>
+<page file="default_021.html" text="" title="GameZ4you"/>
+<page file="default_022.html" text="" title="GameZ4you"/>
+<page file="default_023.html" text="" title="GameZ4you"/>
+<page file="default_024.html" text="" title="GameZ4you"/>
+</page>
+<page file="default_007.html" text="3" title="GameZ4you">
+<page file="default_025.html" text="" title="GameZ4you"/>
+<page file="default_026.html" text="" title="GameZ4you"/>
+<page file="default_027.html" text="" title="GameZ4you"/>
+<page file="default_028.html" text="" title="GameZ4you"/>
+<page file="default_029.html" text="" title="GameZ4you"/>
+</page>
+<page file="default_008.html" text="" title="GameZ4you"/>
+<page file="default_009.html" text="" title="GameZ4you"/>
+<page file="default_010.html" text="" title="GameZ4you"/>
+<page file="default_011.html" text="" title="GameZ4you"/>
+<page file="default_012.html" text="" title="GameZ4you"/>
+<page file="default_013.html" text="" title="GameZ4you"/>
+<page file="default_014.html" text="" title="GameZ4you"/>
+<page file="default_015.html" text="" title="GameZ4you"/>
+</page>
+<page file="default_002.html" text="Registrieren" title="GameZ4you"/>
+<page file="default_003.html" text="Login" title="GameZ4you"/>
+<page file="default_004.html" text="AGB" title="GameZ4you"/>
+<page file="default_005.html" text="Impressum" title="GameZ4you"/>
+<page file="ban1.html" text=" Assassin's Creed  Reise im 12. Jahrhundert als Assassine Altaïr durch das Heilige Land und ermeuche..." title="GameZ4you"/>
+<page file="ban2.html" text=" Wrath of the Lichking  Das 3. AddOn zum erfolgreichsten MMORPG aller Zeiten, World of Warcraft, mit..." title="GameZ4you"/>
+<page file="ban3.html" text=" Fritz &amp; Fertig 2  In dieser wunderschönen und einfachen Schachlernsoftware werden auch sie ein echt..." title="GameZ4you"/>
+<page file="ban4.html" text=" Call of Duty 4  Spielen Sie in einer nahen fiktiven Zukunft und verhindern Sie die finsteren Pläne ..." title="GameZ4you"/>
+</page>
+</site>

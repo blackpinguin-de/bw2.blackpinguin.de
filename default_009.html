@@ -1,0 +1,191 @@
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<link media="all" href="default_009.css" type="text/css" rel="stylesheet">
+</head>
+<body>﻿
+
+
+
+
+<title>GameZ4you</title>
+<script src="extern.js" type="text/javascript"></script>
+<script type="text/javascript" language="JavaScript">
+var season="";
+var go="inhalt/artikel.php";
+</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+/*
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20756060-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    //ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.src = 'https://bw2.blackpinguin.de/ga.php';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+*/
+</script>
+<!-- GA end -->
+
+
+
+
+
+<div style="width: 765px; text-align: left; position: absolute; left: 50%; margin-left: -385px;">
+
+<div style="height: 120px; width: 150px; position: absolute; background-image: url('gz4y.jpg');" class="rahmen"></div>
+<div style="height: 120px; width: 605px; position: absolute; left: 160px; background-image: url('banner.jpg');" class="rahmen"></div>
+
+<div style="top: 130px; width: 150px; position: absolute;" class="rahmen">
+	<br>
+	<!-- Navigation-->
+	<script type="text/javascript">href("?site=home","Home");</script><a href="default.html" indepth="true">Home</a><br>
+	<br>
+	<script type="text/javascript">href("?site=shop","Shop");</script><a href="default_001.html" indepth="true">Shop</a><br>
+	<br>
+	<br>
+	<br>
+	<script type="text/javascript">
+		if(season=="")
+			{href("?site=register","Registrieren");document.write("<br><br>");href("?site=login","Login");}
+		else
+			{if(go!="inhalt/logout.php"){href("?site=warenkorb","Warenkorb");document.write("<br><br>");
+			href("?site=bestellungen","Bestellungen");document.write("<br><br>");href("?site=profil","Profil");
+			document.write("<br><br>");href("?site=logout","Logout");}else{href("?site=reg","Registrieren");
+			document.write("<br><br>");href("?site=login","Login");}}
+	</script><a href="default_002.html" indepth="true">Registrieren</a><br><br><a href="default_003.html" indepth="true">Login</a>
+	<br><br><br><br>
+	<script type="text/javascript">href("?site=agb","AGB");</script><a href="default_004.html" indepth="true">AGB</a><br>
+	<br>
+	<script type="text/javascript">href("?site=impressum","Impressum");</script><a href="default_005.html" indepth="true">Impressum</a>
+	<br><br>
+</div>
+
+<div style="left: 160px; top: 130px; width: 605px; position: absolute; text-align: left;" class="rahmen">
+<!-- Include Script Teil 2--> ﻿﻿<script type="text/javascript" language="JavaScript">
+var a_artikel=new Array(4);
+var a_zusammen=new Array();
+a_artikel[0]="16";
+a_artikel[1]=decodeURIComponent("Assassins%20Creed%20-%20Directors%20Cut%20Edition");
+a_artikel[2]=decodeURIComponent("Assassin%27s%20Creed%20spielt%20im%20Jahr%201191%2C%20zu%20einer%20Zeit%2C%20in%20der%20das%20Heilige%20Land%20vom%20Dritten%20Kreuzzug%20ersch%C3%BCttert%20wird.%3Cbr%3EAltair%2C%20der%20spielbare%20Hauptcharakter%20ist%20fest%20entschlossen%2C%20den%20Konflikt%20zu%20beenden%2C%20indem%20er%20gegen%20beide%20Parteien%20zugleich%20vorgeht%20und%20sie%20unter%20Druck%20setzt.%3Cbr%3EAls%20Assassine%20lauert%20der%20Spieler%20stets%20im%20Verborgenen%20und%20ist%20f%C3%BCr%20seine%20R%C3%BCcksichtslosigkeit%20gef%C3%BCrchtet.%3Cbr%3EEr%20kann%20seine%20unmittelbare%20Umgebung%20von%20einem%20Moment%20zum%20anderen%20in%20totales%20Chaos%20st%C3%BCrzen%20und%20sein%20Handeln%20wird%20die%20Ereignisse%20an%20diesem%20zentralen%20Punkt%20der%20Weltgeschichte%20entscheidend%20beeinflussen.");
+a_artikel[3]="25.95";
+</script>
+
+
+
+<!-- Beispiel implementation -->
+
+
+
+<form action="https://shop.blackpinguin.de/?site=warenkorb" method="post">
+<script type="text/javascript" language="JavaScript">
+var clientheigh=200;
+document.write("<div id=\"overadiv\" style=\"height:"+clientheigh+";width:605;position:relative;text-align:center;left:50%;margin-left:-303px;\"><br>");
+
+document.write("<div class=\"shop\" style=\"width:590;top:5;left:5;position:absolute;\">"+a_artikel[1]+"</div>");
+document.write("<div class=\"shop\" style=\"width:91;height:120;top:32;left:5;position:absolute;\"><img src=\"artikel/"+a_artikel[0]+".jpg\" alt=\"bild\"></div>");
+
+document.write("<div id=\"artikelb\" class=\"shop\" style=\"width:489;top:32;left:105;position:absolute;text-align:left;\">"+a_artikel[2]+"</div>");
+
+tempoh = document.getElementById("artikelb").offsetHeight;
+if(tempoh <= 120) tempoh = 120;
+
+tempwkh=35+tempoh;
+tempwkhe=17;
+
+if(season!="")
+	{
+	document.write("<div id=\"zumwk\" style=\"text-align:left;width:200;top:"+(tempwkh+2)+";left:410;position:absolute;\">");
+	document.write("<input type=\"hidden\" name=\"artikelnr[]\" value=\""+a_artikel[0]+"\">");
+	document.write("<input type=\"text\" name=\"artikelcount[]\" value=\"1\" size=\"1\" maxlength=\"2\">");
+	document.write("<input type=\"submit\" name=\"submitti\" value=\"In den Warenkorb\">");
+	document.write("</div>");
+	tempwkh=tempwkh+33;
+	tempwkhe=tempwkhe+6;
+	}
+
+
+
+document.write("<div class=\"shop\" style=\"height:"+tempwkhe+";width:100;top:"+(35+document.getElementById("artikelb").offsetHeight)+";left:105;position:absolute;\">");
+document.write("Artikel-Preis: </div>");
+
+document.write("<div class=\"shop\" style=\"height:"+tempwkhe+";width:185;top:"+(35+document.getElementById("artikelb").offsetHeight)+";left:215;position:absolute;\">");
+document.write(runde(a_artikel[3],2)+"¹ €</div>");
+
+var tempo3=0;
+if(season!="")
+	{
+	tempo3=28;
+	}
+else
+	{
+	tempo3=8;
+	}
+
+if( a_zusammen.length > 0 )
+	{
+	tempo3=tempo3+90;
+	document.write("<div style=\"top:"+(tempwkhe+48+tempoh)+";left:5;position:absolute;\">Oft zusammen gekauft mit:</div>");
+	document.write("<div class=\"shop\" style=\"width:"+(a_zusammen.length*(45.5)+1)+";top:"+(tempwkhe+65+tempoh)+";height:64;left:5;position:absolute;\">");
+
+	var tmpk = 0;
+	for (var i = 0; i < a_zusammen.length; ++i)
+		{
+		tmpk = ((tmpk*1)+(a_zusammen[i][3]*1))*1;
+		}
+	for (var i = 0; i < a_zusammen.length; ++i)
+		{
+		var tmpid    = a_zusammen[i][0];
+		var tmpname  = a_zusammen[i][1];
+		if(tmpname.length>47) { tmpname = tmpname.substring(47,0) + "..."; }
+		var tmpcount = a_zusammen[i][3];
+		var tmpproz = 100/tmpk*tmpcount;
+		tmpname = tmpname + " - " + runde(tmpproz,2) + " %";
+
+		var tmpbild = "<img src=\"artikel/small/"+(tmpid)+".jpg\" alt=\""+(tmpname)+"\" style=\"margin-left:1px;\" >";
+		hreft("?site=artikel&amp;nr="+tmpid, tmpname, tmpbild);
+		//document.write("<a href=\"?site=artikel&nr="+(tmpid)+"\" title=\""+(tmpname)+"\">");
+		//document.write("<img src=\"artikel/small/"+(tmpid)+".jpg\" alt=\""+(tmpname)+"\" style=\"margin-left:1px;\" >");
+		//document.write("</a>");
+		}
+	document.write("</div>");
+	}
+
+
+document.getElementById("overadiv").style.height =tempwkhe+25+tempo3+(tempoh);
+
+document.write("<div style=\"text-align:right;top:"+(tempwkh)+";left:496;position:absolute;\">¹ = ohne mwst.</div>");
+
+
+document.write("</div>");
+
+
+
+
+</script><div id="overadiv" style="height: 246px; width: 605px; position: relative; text-align: center; left: 50%; margin-left: -303px;"><br><div class="shop" style="width: 590px; top: 5px; left: 5px; position: absolute;">Assassins Creed - Directors Cut Edition</div><div class="shop" style="width: 91px; height: 120px; top: 32px; left: 5px; position: absolute;"><img src="16.jpg" alt="bild"></div><div id="artikelb" class="shop" style="width: 489px; top: 32px; left: 105px; position: absolute; text-align: left;">Assassin's Creed spielt im Jahr 1191, zu einer Zeit, in der das Heilige Land vom Dritten Kreuzzug erschüttert wird.<br>Altair, der spielbare Hauptcharakter ist fest entschlossen, den Konflikt zu beenden, indem er gegen beide Parteien zugleich vorgeht und sie unter Druck setzt.<br>Als Assassine lauert der Spieler stets im Verborgenen und ist für seine Rücksichtslosigkeit gefürchtet.<br>Er kann seine unmittelbare Umgebung von einem Moment zum anderen in totales Chaos stürzen und sein Handeln wird die Ereignisse an diesem zentralen Punkt der Weltgeschichte entscheidend beeinflussen.</div><div class="shop" style="height: 17px; width: 100px; top: 231px; left: 105px; position: absolute;">Artikel-Preis: </div><div class="shop" style="height: 17px; width: 185px; top: 231px; left: 215px; position: absolute;">25.95¹ €</div><div style="text-align: right; top: 231px; left: 496px; position: absolute;">¹ = ohne mwst.</div></div>
+</form>
+
+</div>
+</div>
+
+
+<div style="font-size: 7pt; position: absolute; top: 10px; left: 10px; width: 235px; height: 35px; background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+Alle Angebote und Angaben auf dieser Seite sind fiktiv.
+<br>Angebotene Artikel dienen der illustration der Seite.
+<br><a style="color: rgb(0, 255, 0);" href="https://rcl.blackpinguin.de/imprint">Echtes Impressum</a>
+</div>
+
+
+
+
+
+
+
+
+</body></html>
