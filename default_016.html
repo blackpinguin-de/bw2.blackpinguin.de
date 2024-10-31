@@ -51,15 +51,7 @@ var go="inhalt/shop.php";
 	<br>
 	<br>
 	<br>
-	<script type="text/javascript">
-		if(season=="")
-			{href("?site=register","Registrieren");document.write("<br><br>");href("?site=login","Login");}
-		else
-			{if(go!="inhalt/logout.php"){href("?site=warenkorb","Warenkorb");document.write("<br><br>");
-			href("?site=bestellungen","Bestellungen");document.write("<br><br>");href("?site=profil","Profil");
-			document.write("<br><br>");href("?site=logout","Logout");}else{href("?site=reg","Registrieren");
-			document.write("<br><br>");href("?site=login","Login");}}
-	</script><a href="default_002.html" indepth="true">Registrieren</a><br><br><a href="default_003.html" indepth="true">Login</a>
+	<a href="default_002.html" indepth="true">Registrieren</a><br><br><a href="default_003.html" indepth="true">Login</a>
 	<br><br><br><br>
 	<script type="text/javascript">href("?site=agb","AGB");</script><a href="default_004.html" indepth="true">AGB</a><br>
 	<br>
@@ -129,69 +121,7 @@ a_preis[7]="34.95";
 
 <div style="width: 605px; height: 670px; position: relative; text-align: center; left: 50%; margin-left: -303px;"><br><form action="https://shop.blackpinguin.de/?site=warenkorb" method="post">
 <!-- Beispiel implementation -->
-<script type="text/javascript" language="JavaScript">
-
-var aw=440;
-var leftb=455;
-var abw=387;
-
-if(season=="")
-	{
-	aw=aw+55;
-	leftb=leftb+55;
-	abw=abw+55;
-	}
-
-
-document.write("<div class=\"shop\" style=\"width:"+aw+";top:15;left:5;position:absolute;\">Artikel</div>");
-document.write("<div class=\"shop\"  style=\"width:80;top:15;left:"+leftb+";position:absolute;\">Preis</div>");
-if(season!=""){document.write("<div class=\"shop\"  style=\"width:50;top:15;left:545;position:absolute;\">Menge</div>");}
-
-
-var hoehe=45;
-for(i=0; i < a_nr.length;i++)
-{
-
-document.write("<div class=\"shop\" style=\"height:62;width:43;top:"+hoehe+";left:5;position:absolute;\">");
-href("?site=artikel&amp;nr="+a_nr[i],"<img align=\"left\" src=\"artikel/small/"+a_nr[i]+".jpg\" alt=\"bild\">");
-document.write("</div>");
-
-document.write("<div class=\"shop\" style=\"height:62;width:"+abw+";top:"+hoehe+";left:57;position:absolute;\"><br>");
-if(a_name[i].length>47){href("?site=artikel&amp;nr="+a_nr[i],a_name[i].substring(47, 0)+"...");}
-else{href("?site=artikel&amp;nr="+a_nr[i],a_name[i]);}
-document.write("</div>");
-
-document.write("<div class=\"shop\" style=\"height:62;width:80;top:"+hoehe+";left:"+leftb+";position:absolute;text-align:right;\"><br><nobr>"+runde(a_preis[i],2)+"¹ €</nobr></div>");
-
-
-
-if(season!="")
-	{
-	document.write("<div class=\"shop\" style=\"height:62;width:50;top:"+hoehe+";left:545;position:absolute;\">");
-	document.write("<br><input type=\"hidden\" name=\"artikelnr[]\" value=\""+a_nr[i]+"\">");
-	document.write("<input type=\"text\" name=\"artikelcount[]\" value=\"0\" size=\"1\" maxlength=\"2\">");
-	document.write("</div>");
-	}
-
-
-hoehe=hoehe+75;
-}
-
-if(a_nr.length==0)
-	{
-	document.write("<div style=\"text-align:center;top:"+(hoehe)+";left:5;width:590;position:absolute;\">Keine Artikel gefunden.</div>");
-	hoehe=hoehe+30;
-	}
-
-if(season!="")
-	{
-	document.write("<div style=\"text-align:right;top:"+(hoehe)+";left:465;position:absolute;\"><input type=\"submit\" name=\"submitti\" value=\"In den Warenkorb\"></div>");
-	hoehe=hoehe+30;
-	}
-
-document.write("<div style=\"text-align:right;top:"+(hoehe)+";left:500;position:absolute;\">¹ = ohne mwst.</div>");
-
-</script><div class="shop" style="width: 495px; top: 15px; left: 5px; position: absolute;">Artikel</div><div class="shop" style="width: 80px; top: 15px; left: 510px; position: absolute;">Preis</div><div class="shop" style="height: 62px; width: 43px; top: 45px; left: 5px; position: absolute;"><a href="default_008.html" indepth="true"><img src="4.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 45px; left: 57px; position: absolute;"><br><a href="default_008.html" indepth="true">Anno 1701</a></div><div class="shop" style="height: 62px; width: 80px; top: 45px; left: 510px; position: absolute; text-align: right;"><br><nobr>21.99¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 120px; left: 5px; position: absolute;"><a href="default_009.html" indepth="true"><img src="16_001.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 120px; left: 57px; position: absolute;"><br><a href="default_009.html" indepth="true">Assassins Creed - Directors Cut Edition</a></div><div class="shop" style="height: 62px; width: 80px; top: 120px; left: 510px; position: absolute; text-align: right;"><br><nobr>25.95¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 195px; left: 5px; position: absolute;"><a href="default_010.html" indepth="true"><img src="1_001.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 195px; left: 57px; position: absolute;"><br><a href="default_010.html" indepth="true">Call of Duty 4: Modern Warfare</a></div><div class="shop" style="height: 62px; width: 80px; top: 195px; left: 510px; position: absolute; text-align: right;"><br><nobr>33.34¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 270px; left: 5px; position: absolute;"><a href="default_011.html" indepth="true"><img src="19.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 270px; left: 57px; position: absolute;"><br><a href="default_011.html" indepth="true">Command &amp; Conquer 3 - Tiberium Wars [Kane Editi...</a></div><div class="shop" style="height: 62px; width: 80px; top: 270px; left: 510px; position: absolute; text-align: right;"><br><nobr>29.45¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 345px; left: 5px; position: absolute;"><a href="default_012.html" indepth="true"><img src="5.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 345px; left: 57px; position: absolute;"><br><a href="default_012.html" indepth="true">Counter-Strike: Source (inkl. Day of Defeat: So...</a></div><div class="shop" style="height: 62px; width: 80px; top: 345px; left: 510px; position: absolute; text-align: right;"><br><nobr>11.85¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 420px; left: 5px; position: absolute;"><a href="default_013.html" indepth="true"><img src="13_001.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 420px; left: 57px; position: absolute;"><br><a href="default_013.html" indepth="true">Fritz &amp; Fertig 2 - Schach im schwarzen Schloss</a></div><div class="shop" style="height: 62px; width: 80px; top: 420px; left: 510px; position: absolute; text-align: right;"><br><nobr>69.85¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 495px; left: 5px; position: absolute;"><a href="default_014.html" indepth="true"><img src="8.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 495px; left: 57px; position: absolute;"><br><a href="default_014.html" indepth="true">Frontlines: Fuel of War</a></div><div class="shop" style="height: 62px; width: 80px; top: 495px; left: 510px; position: absolute; text-align: right;"><br><nobr>8.15¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 570px; left: 5px; position: absolute;"><a href="default_015.html" indepth="true"><img src="2.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 570px; left: 57px; position: absolute;"><br><a href="default_015.html" indepth="true">Fussball Manager 08</a></div><div class="shop" style="height: 62px; width: 80px; top: 570px; left: 510px; position: absolute; text-align: right;"><br><nobr>34.95¹ €</nobr></div><div style="text-align: right; top: 645px; left: 500px; position: absolute;">¹ = ohne mwst.</div>
+<div class="shop" style="width: 495px; top: 15px; left: 5px; position: absolute;">Artikel</div><div class="shop" style="width: 80px; top: 15px; left: 510px; position: absolute;">Preis</div><div class="shop" style="height: 62px; width: 43px; top: 45px; left: 5px; position: absolute;"><a href="default_008.html" indepth="true"><img src="4.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 45px; left: 57px; position: absolute;"><br><a href="default_008.html" indepth="true">Anno 1701</a></div><div class="shop" style="height: 62px; width: 80px; top: 45px; left: 510px; position: absolute; text-align: right;"><br><nobr>21.99¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 120px; left: 5px; position: absolute;"><a href="default_009.html" indepth="true"><img src="16_001.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 120px; left: 57px; position: absolute;"><br><a href="default_009.html" indepth="true">Assassins Creed - Directors Cut Edition</a></div><div class="shop" style="height: 62px; width: 80px; top: 120px; left: 510px; position: absolute; text-align: right;"><br><nobr>25.95¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 195px; left: 5px; position: absolute;"><a href="default_010.html" indepth="true"><img src="1_001.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 195px; left: 57px; position: absolute;"><br><a href="default_010.html" indepth="true">Call of Duty 4: Modern Warfare</a></div><div class="shop" style="height: 62px; width: 80px; top: 195px; left: 510px; position: absolute; text-align: right;"><br><nobr>33.34¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 270px; left: 5px; position: absolute;"><a href="default_011.html" indepth="true"><img src="19.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 270px; left: 57px; position: absolute;"><br><a href="default_011.html" indepth="true">Command &amp; Conquer 3 - Tiberium Wars [Kane Editi...</a></div><div class="shop" style="height: 62px; width: 80px; top: 270px; left: 510px; position: absolute; text-align: right;"><br><nobr>29.45¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 345px; left: 5px; position: absolute;"><a href="default_012.html" indepth="true"><img src="5.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 345px; left: 57px; position: absolute;"><br><a href="default_012.html" indepth="true">Counter-Strike: Source (inkl. Day of Defeat: So...</a></div><div class="shop" style="height: 62px; width: 80px; top: 345px; left: 510px; position: absolute; text-align: right;"><br><nobr>11.85¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 420px; left: 5px; position: absolute;"><a href="default_013.html" indepth="true"><img src="13_001.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 420px; left: 57px; position: absolute;"><br><a href="default_013.html" indepth="true">Fritz &amp; Fertig 2 - Schach im schwarzen Schloss</a></div><div class="shop" style="height: 62px; width: 80px; top: 420px; left: 510px; position: absolute; text-align: right;"><br><nobr>69.85¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 495px; left: 5px; position: absolute;"><a href="default_014.html" indepth="true"><img src="8.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 495px; left: 57px; position: absolute;"><br><a href="default_014.html" indepth="true">Frontlines: Fuel of War</a></div><div class="shop" style="height: 62px; width: 80px; top: 495px; left: 510px; position: absolute; text-align: right;"><br><nobr>8.15¹ €</nobr></div><div class="shop" style="height: 62px; width: 43px; top: 570px; left: 5px; position: absolute;"><a href="default_015.html" indepth="true"><img src="2.jpg" alt="bild" align="left"></a></div><div class="shop" style="height: 62px; width: 442px; top: 570px; left: 57px; position: absolute;"><br><a href="default_015.html" indepth="true">Fussball Manager 08</a></div><div class="shop" style="height: 62px; width: 80px; top: 570px; left: 510px; position: absolute; text-align: right;"><br><nobr>34.95¹ €</nobr></div><div style="text-align: right; top: 645px; left: 500px; position: absolute;">¹ = ohne mwst.</div>
 </form>
 
 

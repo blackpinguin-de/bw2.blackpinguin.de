@@ -51,15 +51,7 @@ var go="inhalt/artikel.php";
 	<br>
 	<br>
 	<br>
-	<script type="text/javascript">
-		if(season=="")
-			{href("?site=register","Registrieren");document.write("<br><br>");href("?site=login","Login");}
-		else
-			{if(go!="inhalt/logout.php"){href("?site=warenkorb","Warenkorb");document.write("<br><br>");
-			href("?site=bestellungen","Bestellungen");document.write("<br><br>");href("?site=profil","Profil");
-			document.write("<br><br>");href("?site=logout","Logout");}else{href("?site=reg","Registrieren");
-			document.write("<br><br>");href("?site=login","Login");}}
-	</script><a href="default_002.html" indepth="true">Registrieren</a><br><br><a href="default_003.html" indepth="true">Login</a>
+	<a href="default_002.html" indepth="true">Registrieren</a><br><br><a href="default_003.html" indepth="true">Login</a>
 	<br><br><br><br>
 	<script type="text/javascript">href("?site=agb","AGB");</script><a href="default_004.html" indepth="true">AGB</a><br>
 	<br>
@@ -84,91 +76,7 @@ a_artikel[3]="29.45";
 
 
 <form action="https://shop.blackpinguin.de/?site=warenkorb" method="post">
-<script type="text/javascript" language="JavaScript">
-var clientheigh=200;
-document.write("<div id=\"overadiv\" style=\"height:"+clientheigh+";width:605;position:relative;text-align:center;left:50%;margin-left:-303px;\"><br>");
-
-document.write("<div class=\"shop\" style=\"width:590;top:5;left:5;position:absolute;\">"+a_artikel[1]+"</div>");
-document.write("<div class=\"shop\" style=\"width:91;height:120;top:32;left:5;position:absolute;\"><img src=\"artikel/"+a_artikel[0]+".jpg\" alt=\"bild\"></div>");
-
-document.write("<div id=\"artikelb\" class=\"shop\" style=\"width:489;top:32;left:105;position:absolute;text-align:left;\">"+a_artikel[2]+"</div>");
-
-tempoh = document.getElementById("artikelb").offsetHeight;
-if(tempoh <= 120) tempoh = 120;
-
-tempwkh=35+tempoh;
-tempwkhe=17;
-
-if(season!="")
-	{
-	document.write("<div id=\"zumwk\" style=\"text-align:left;width:200;top:"+(tempwkh+2)+";left:410;position:absolute;\">");
-	document.write("<input type=\"hidden\" name=\"artikelnr[]\" value=\""+a_artikel[0]+"\">");
-	document.write("<input type=\"text\" name=\"artikelcount[]\" value=\"1\" size=\"1\" maxlength=\"2\">");
-	document.write("<input type=\"submit\" name=\"submitti\" value=\"In den Warenkorb\">");
-	document.write("</div>");
-	tempwkh=tempwkh+33;
-	tempwkhe=tempwkhe+6;
-	}
-
-
-
-document.write("<div class=\"shop\" style=\"height:"+tempwkhe+";width:100;top:"+(35+document.getElementById("artikelb").offsetHeight)+";left:105;position:absolute;\">");
-document.write("Artikel-Preis: </div>");
-
-document.write("<div class=\"shop\" style=\"height:"+tempwkhe+";width:185;top:"+(35+document.getElementById("artikelb").offsetHeight)+";left:215;position:absolute;\">");
-document.write(runde(a_artikel[3],2)+"¹ €</div>");
-
-var tempo3=0;
-if(season!="")
-	{
-	tempo3=28;
-	}
-else
-	{
-	tempo3=8;
-	}
-
-if( a_zusammen.length > 0 )
-	{
-	tempo3=tempo3+90;
-	document.write("<div style=\"top:"+(tempwkhe+48+tempoh)+";left:5;position:absolute;\">Oft zusammen gekauft mit:</div>");
-	document.write("<div class=\"shop\" style=\"width:"+(a_zusammen.length*(45.5)+1)+";top:"+(tempwkhe+65+tempoh)+";height:64;left:5;position:absolute;\">");
-
-	var tmpk = 0;
-	for (var i = 0; i < a_zusammen.length; ++i)
-		{
-		tmpk = ((tmpk*1)+(a_zusammen[i][3]*1))*1;
-		}
-	for (var i = 0; i < a_zusammen.length; ++i)
-		{
-		var tmpid    = a_zusammen[i][0];
-		var tmpname  = a_zusammen[i][1];
-		if(tmpname.length>47) { tmpname = tmpname.substring(47,0) + "..."; }
-		var tmpcount = a_zusammen[i][3];
-		var tmpproz = 100/tmpk*tmpcount;
-		tmpname = tmpname + " - " + runde(tmpproz,2) + " %";
-
-		var tmpbild = "<img src=\"artikel/small/"+(tmpid)+".jpg\" alt=\""+(tmpname)+"\" style=\"margin-left:1px;\" >";
-		hreft("?site=artikel&amp;nr="+tmpid, tmpname, tmpbild);
-		//document.write("<a href=\"?site=artikel&nr="+(tmpid)+"\" title=\""+(tmpname)+"\">");
-		//document.write("<img src=\"artikel/small/"+(tmpid)+".jpg\" alt=\""+(tmpname)+"\" style=\"margin-left:1px;\" >");
-		//document.write("</a>");
-		}
-	document.write("</div>");
-	}
-
-
-document.getElementById("overadiv").style.height =tempwkhe+25+tempo3+(tempoh);
-
-document.write("<div style=\"text-align:right;top:"+(tempwkh)+";left:496;position:absolute;\">¹ = ohne mwst.</div>");
-
-
-document.write("</div>");
-
-
-
-
-</script><div id="overadiv" style="height: 873px; width: 605px; position: relative; text-align: center; left: 50%; margin-left: -303px;"><br><div class="shop" style="width: 590px; top: 5px; left: 5px; position: absolute;">Command &amp; Conquer 3 - Tiberium Wars [Kane Edition]</div><div class="shop" style="width: 91px; height: 120px; top: 32px; left: 5px; position: absolute;"><img src="19_001.jpg" alt="bild"></div><div id="artikelb" class="shop" style="width: 489px; top: 32px; left: 105px; position: absolute; text-align: left;">Command &amp; Conquer 3 Tiberium Wars Kane Edition Die C&amp;C 3: Kane Edition wird eine exklusive Bonus-DVD enthalten - mit einem Blick hinter die Kulissen, gelöschten Szenen und Outtakes, einer Reihe an persönlicher Gameplay-Strategie-Videos von den Entwicklern und vielem mehr.<br>Die C&amp;C 3: Kane Edition wird außerdem exklusive Spielinhalte und neue Multiplayer-Karten sowie drei einzigartige Einheiten-Skins enthalten - eine für jede Fraktion des Spiels.<br>Die Fans können sich ebenso über 5 Wallpaper freuen.<br>März 2047. Ein gewaltiger nuklearer Feuerball explodiert hoch am Nachthimmel und läutet den dramatischen Beginn des 3. Tiberium-Kriegs ein - und damit auch die lang erwartete Rückkehr der bahnbrechendsten Echtzeitstrategie (RTS)-Franchise aller Zeiten.<br>Die von den Kritikern gelobte Command &amp; Conquer(TM) (C&amp;C)-Reihe kehrt nun mit Command &amp; Conquer 3 Tiberium Wars(TM) (C&amp;C 3) zurück.<br>Wieder einmal definiert C&amp;C 3 den Standard des Echtzeitstrategie-Genres neu und führt dich an den Ort zurück, an dem alles begann - das Tiberium-Universum.<br>Im Jahr 2047 hat das Tiberium die gesamte Erde überzogen, die nun in Zonen, basierend auf dem Grad der Tiberium-Verseuchung, unterteilt ist.<br>Blaue Zonen, die 20 % der gesamten Erdoberfläche einnehmen, stellen die letzte Zuflucht der zivilisierten Welt dar.<br>Teilweise bewohnbare gelbe Zonen nehmen 50 % der Erdoberfläche ein.<br> In diesen, vom Krieg gezeichneten und oekologisch verwüsteten Gebieten, lebt der Großteil der Bevölkerung.<br>Die verbleibenden 30% des Planeten sind unbewohnbar - ein vom Tiberium geschaffenes Ödland, das von heftigen Ionenstürmen heimgesucht wird.<br>Diese roten Zonen erinnern mehr an die Oberflaeche eines fremden Planeten.<br>Der beruechtigte Kane ist zurueckgekehrt, um die Bruderschaft von Nod anzuführen und einen gewaltigen globalen Angriff gegen die Global Defense Initiative zu starten.<br>Es geht um die wenigen noch verbleibenden blauen Zonen auf der Erde, und nur du kannst ihn aufhalten.<br>Das Schicksal der Menschheit - und des Planeten - liegt in deiner Hand.<br>Mit atemberaubender Grafik der nächsten Generation, einer von bekannten Hollywood-Schauspielern erzaehlten epischen Story und der bekannt rasanten Spielweise wird C&amp;C 3 den neuen Standard der Einzelspieler-RTS-Erfahrung setzen.<br> Wenn du dich schließlich entscheidest, deine Fähigkeiten online unter Beweis zu stellen, entfalten sich weitere innovative Features wie beispielsweise die Möglichkeit, Online-Schlachten in einen packenden Zuschauer-Sport zu verwandeln.<br>Willkommen zurück, Commander.</div><div class="shop" style="height: 17px; width: 100px; top: 858px; left: 105px; position: absolute;">Artikel-Preis: </div><div class="shop" style="height: 17px; width: 185px; top: 858px; left: 215px; position: absolute;">29.45¹ €</div><div style="text-align: right; top: 858px; left: 496px; position: absolute;">¹ = ohne mwst.</div></div>
+<div id="overadiv" style="height: 873px; width: 605px; position: relative; text-align: center; left: 50%; margin-left: -303px;"><br><div class="shop" style="width: 590px; top: 5px; left: 5px; position: absolute;">Command &amp; Conquer 3 - Tiberium Wars [Kane Edition]</div><div class="shop" style="width: 91px; height: 120px; top: 32px; left: 5px; position: absolute;"><img src="19_001.jpg" alt="bild"></div><div id="artikelb" class="shop" style="width: 489px; top: 32px; left: 105px; position: absolute; text-align: left;">Command &amp; Conquer 3 Tiberium Wars Kane Edition Die C&amp;C 3: Kane Edition wird eine exklusive Bonus-DVD enthalten - mit einem Blick hinter die Kulissen, gelöschten Szenen und Outtakes, einer Reihe an persönlicher Gameplay-Strategie-Videos von den Entwicklern und vielem mehr.<br>Die C&amp;C 3: Kane Edition wird außerdem exklusive Spielinhalte und neue Multiplayer-Karten sowie drei einzigartige Einheiten-Skins enthalten - eine für jede Fraktion des Spiels.<br>Die Fans können sich ebenso über 5 Wallpaper freuen.<br>März 2047. Ein gewaltiger nuklearer Feuerball explodiert hoch am Nachthimmel und läutet den dramatischen Beginn des 3. Tiberium-Kriegs ein - und damit auch die lang erwartete Rückkehr der bahnbrechendsten Echtzeitstrategie (RTS)-Franchise aller Zeiten.<br>Die von den Kritikern gelobte Command &amp; Conquer(TM) (C&amp;C)-Reihe kehrt nun mit Command &amp; Conquer 3 Tiberium Wars(TM) (C&amp;C 3) zurück.<br>Wieder einmal definiert C&amp;C 3 den Standard des Echtzeitstrategie-Genres neu und führt dich an den Ort zurück, an dem alles begann - das Tiberium-Universum.<br>Im Jahr 2047 hat das Tiberium die gesamte Erde überzogen, die nun in Zonen, basierend auf dem Grad der Tiberium-Verseuchung, unterteilt ist.<br>Blaue Zonen, die 20 % der gesamten Erdoberfläche einnehmen, stellen die letzte Zuflucht der zivilisierten Welt dar.<br>Teilweise bewohnbare gelbe Zonen nehmen 50 % der Erdoberfläche ein.<br> In diesen, vom Krieg gezeichneten und oekologisch verwüsteten Gebieten, lebt der Großteil der Bevölkerung.<br>Die verbleibenden 30% des Planeten sind unbewohnbar - ein vom Tiberium geschaffenes Ödland, das von heftigen Ionenstürmen heimgesucht wird.<br>Diese roten Zonen erinnern mehr an die Oberflaeche eines fremden Planeten.<br>Der beruechtigte Kane ist zurueckgekehrt, um die Bruderschaft von Nod anzuführen und einen gewaltigen globalen Angriff gegen die Global Defense Initiative zu starten.<br>Es geht um die wenigen noch verbleibenden blauen Zonen auf der Erde, und nur du kannst ihn aufhalten.<br>Das Schicksal der Menschheit - und des Planeten - liegt in deiner Hand.<br>Mit atemberaubender Grafik der nächsten Generation, einer von bekannten Hollywood-Schauspielern erzaehlten epischen Story und der bekannt rasanten Spielweise wird C&amp;C 3 den neuen Standard der Einzelspieler-RTS-Erfahrung setzen.<br> Wenn du dich schließlich entscheidest, deine Fähigkeiten online unter Beweis zu stellen, entfalten sich weitere innovative Features wie beispielsweise die Möglichkeit, Online-Schlachten in einen packenden Zuschauer-Sport zu verwandeln.<br>Willkommen zurück, Commander.</div><div class="shop" style="height: 17px; width: 100px; top: 858px; left: 105px; position: absolute;">Artikel-Preis: </div><div class="shop" style="height: 17px; width: 185px; top: 858px; left: 215px; position: absolute;">29.45¹ €</div><div style="text-align: right; top: 858px; left: 496px; position: absolute;">¹ = ohne mwst.</div></div>
 </form>
 
 </div>

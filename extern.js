@@ -10,6 +10,7 @@
 
 function href(seite,name)
 {
+return;
 if(season=="")
 	{
 	document.write("<a href=\""+seite+"\">"+name+"</a>");
@@ -30,6 +31,7 @@ else
 
 function hreft(seite,title,name)
 {
+return;
 if(season=="")
 	{
 	document.write("<a href=\""+seite+"\" title=\""+title+"\">"+name+"</a>");

@@ -51,15 +51,7 @@ var go="inhalt/artikel.php";
 	<br>
 	<br>
 	<br>
-	<script type="text/javascript">
-		if(season=="")
-			{href("?site=register","Registrieren");document.write("<br><br>");href("?site=login","Login");}
-		else
-			{if(go!="inhalt/logout.php"){href("?site=warenkorb","Warenkorb");document.write("<br><br>");
-			href("?site=bestellungen","Bestellungen");document.write("<br><br>");href("?site=profil","Profil");
-			document.write("<br><br>");href("?site=logout","Logout");}else{href("?site=reg","Registrieren");
-			document.write("<br><br>");href("?site=login","Login");}}
-	</script><a href="default_002.html" indepth="true">Registrieren</a><br><br><a href="default_003.html" indepth="true">Login</a>
+	<a href="default_002.html" indepth="true">Registrieren</a><br><br><a href="default_003.html" indepth="true">Login</a>
 	<br><br><br><br>
 	<script type="text/javascript">href("?site=agb","AGB");</script><a href="default_004.html" indepth="true">AGB</a><br>
 	<br>
@@ -84,91 +76,7 @@ a_artikel[3]="6.66";
 
 
 <form action="https://shop.blackpinguin.de/?site=warenkorb" method="post">
-<script type="text/javascript" language="JavaScript">
-var clientheigh=200;
-document.write("<div id=\"overadiv\" style=\"height:"+clientheigh+";width:605;position:relative;text-align:center;left:50%;margin-left:-303px;\"><br>");
-
-document.write("<div class=\"shop\" style=\"width:590;top:5;left:5;position:absolute;\">"+a_artikel[1]+"</div>");
-document.write("<div class=\"shop\" style=\"width:91;height:120;top:32;left:5;position:absolute;\"><img src=\"artikel/"+a_artikel[0]+".jpg\" alt=\"bild\"></div>");
-
-document.write("<div id=\"artikelb\" class=\"shop\" style=\"width:489;top:32;left:105;position:absolute;text-align:left;\">"+a_artikel[2]+"</div>");
-
-tempoh = document.getElementById("artikelb").offsetHeight;
-if(tempoh <= 120) tempoh = 120;
-
-tempwkh=35+tempoh;
-tempwkhe=17;
-
-if(season!="")
-	{
-	document.write("<div id=\"zumwk\" style=\"text-align:left;width:200;top:"+(tempwkh+2)+";left:410;position:absolute;\">");
-	document.write("<input type=\"hidden\" name=\"artikelnr[]\" value=\""+a_artikel[0]+"\">");
-	document.write("<input type=\"text\" name=\"artikelcount[]\" value=\"1\" size=\"1\" maxlength=\"2\">");
-	document.write("<input type=\"submit\" name=\"submitti\" value=\"In den Warenkorb\">");
-	document.write("</div>");
-	tempwkh=tempwkh+33;
-	tempwkhe=tempwkhe+6;
-	}
-
-
-
-document.write("<div class=\"shop\" style=\"height:"+tempwkhe+";width:100;top:"+(35+document.getElementById("artikelb").offsetHeight)+";left:105;position:absolute;\">");
-document.write("Artikel-Preis: </div>");
-
-document.write("<div class=\"shop\" style=\"height:"+tempwkhe+";width:185;top:"+(35+document.getElementById("artikelb").offsetHeight)+";left:215;position:absolute;\">");
-document.write(runde(a_artikel[3],2)+"¹ €</div>");
-
-var tempo3=0;
-if(season!="")
-	{
-	tempo3=28;
-	}
-else
-	{
-	tempo3=8;
-	}
-
-if( a_zusammen.length > 0 )
-	{
-	tempo3=tempo3+90;
-	document.write("<div style=\"top:"+(tempwkhe+48+tempoh)+";left:5;position:absolute;\">Oft zusammen gekauft mit:</div>");
-	document.write("<div class=\"shop\" style=\"width:"+(a_zusammen.length*(45.5)+1)+";top:"+(tempwkhe+65+tempoh)+";height:64;left:5;position:absolute;\">");
-
-	var tmpk = 0;
-	for (var i = 0; i < a_zusammen.length; ++i)
-		{
-		tmpk = ((tmpk*1)+(a_zusammen[i][3]*1))*1;
-		}
-	for (var i = 0; i < a_zusammen.length; ++i)
-		{
-		var tmpid    = a_zusammen[i][0];
-		var tmpname  = a_zusammen[i][1];
-		if(tmpname.length>47) { tmpname = tmpname.substring(47,0) + "..."; }
-		var tmpcount = a_zusammen[i][3];
-		var tmpproz = 100/tmpk*tmpcount;
-		tmpname = tmpname + " - " + runde(tmpproz,2) + " %";
-
-		var tmpbild = "<img src=\"artikel/small/"+(tmpid)+".jpg\" alt=\""+(tmpname)+"\" style=\"margin-left:1px;\" >";
-		hreft("?site=artikel&amp;nr="+tmpid, tmpname, tmpbild);
-		//document.write("<a href=\"?site=artikel&nr="+(tmpid)+"\" title=\""+(tmpname)+"\">");
-		//document.write("<img src=\"artikel/small/"+(tmpid)+".jpg\" alt=\""+(tmpname)+"\" style=\"margin-left:1px;\" >");
-		//document.write("</a>");
-		}
-	document.write("</div>");
-	}
-
-
-document.getElementById("overadiv").style.height =tempwkhe+25+tempo3+(tempoh);
-
-document.write("<div style=\"text-align:right;top:"+(tempwkh)+";left:496;position:absolute;\">¹ = ohne mwst.</div>");
-
-
-document.write("</div>");
-
-
-
-
-</script><div id="overadiv" style="height: 560px; width: 605px; position: relative; text-align: center; left: 50%; margin-left: -303px;"><br><div class="shop" style="width: 590px; top: 5px; left: 5px; position: absolute;">World of WarCraft</div><div class="shop" style="width: 91px; height: 120px; top: 32px; left: 5px; position: absolute;"><img src="6_001.jpg" alt="bild"></div><div id="artikelb" class="shop" style="width: 489px; top: 32px; left: 105px; position: absolute; text-align: left;">Erleben Sie die Welt von Orcs und Menschen in einem atemberaubenden Fantasy Online-Rollenspiel: Mit World of Warcraft <br>setzt Blizzard seine Strategie-Hits in einem MMORPG fort, das schon jetzt alle Rekorde bricht - mehr als 250.000 Spieler <br>meldeten sich bereits am ersten Tag nach US-Start an, über Wochen führte World of Warcraft die Verkaufscharts. Größer, <br>schöner und einsteigerfreundlicher als die Konkurrenz - lesen Sie, warum Blizzard ein weiterer Meilenstein gelungen ist!.<br><br><b>Features:</b><ul><li>Erleben Sie zusammen mit tausenden Mitspielern epische Abenteuer in der Warcraft-Welt - komplett mit endlosen Wäldern, lebensfeindlichen Wüsten, schneebedeckten Bergspitzen und anderen exotischen Regionen</li><li>Kämpfen Sie als Mitglied eines der 8 Völker auf Seiten der Allianz oder der Horde und besuchen Sie die 6 gewaltigen Hauptstädte</li><li>Wählen Sie ihren Charakter aus bis zu 9 verschiedenen Klassen, von heiligen Paladinen, über mächtige Krieger, bis hin zu dämonischen Hexenmeistern</li><li>Freuen Sie sich auf hunderte Stunden Gameplay mit monatlich neuen Quests, Gegenständen, und Abenteuern</li><li>Üben Sie eine Vielzahl von Handwerksfertigkeiten aus, um seltene Reagenzien zu finden, maßgeschneiderte Kleidung anzufertigen, durch geschicktes Handeln mit Ihren Mitspielern große Reichtümer anzuhäufen</li></ul></div><div class="shop" style="height: 17px; width: 100px; top: 545px; left: 105px; position: absolute;">Artikel-Preis: </div><div class="shop" style="height: 17px; width: 185px; top: 545px; left: 215px; position: absolute;">6.66¹ €</div><div style="text-align: right; top: 545px; left: 496px; position: absolute;">¹ = ohne mwst.</div></div>
+<div id="overadiv" style="height: 560px; width: 605px; position: relative; text-align: center; left: 50%; margin-left: -303px;"><br><div class="shop" style="width: 590px; top: 5px; left: 5px; position: absolute;">World of WarCraft</div><div class="shop" style="width: 91px; height: 120px; top: 32px; left: 5px; position: absolute;"><img src="6_001.jpg" alt="bild"></div><div id="artikelb" class="shop" style="width: 489px; top: 32px; left: 105px; position: absolute; text-align: left;">Erleben Sie die Welt von Orcs und Menschen in einem atemberaubenden Fantasy Online-Rollenspiel: Mit World of Warcraft <br>setzt Blizzard seine Strategie-Hits in einem MMORPG fort, das schon jetzt alle Rekorde bricht - mehr als 250.000 Spieler <br>meldeten sich bereits am ersten Tag nach US-Start an, über Wochen führte World of Warcraft die Verkaufscharts. Größer, <br>schöner und einsteigerfreundlicher als die Konkurrenz - lesen Sie, warum Blizzard ein weiterer Meilenstein gelungen ist!.<br><br><b>Features:</b><ul><li>Erleben Sie zusammen mit tausenden Mitspielern epische Abenteuer in der Warcraft-Welt - komplett mit endlosen Wäldern, lebensfeindlichen Wüsten, schneebedeckten Bergspitzen und anderen exotischen Regionen</li><li>Kämpfen Sie als Mitglied eines der 8 Völker auf Seiten der Allianz oder der Horde und besuchen Sie die 6 gewaltigen Hauptstädte</li><li>Wählen Sie ihren Charakter aus bis zu 9 verschiedenen Klassen, von heiligen Paladinen, über mächtige Krieger, bis hin zu dämonischen Hexenmeistern</li><li>Freuen Sie sich auf hunderte Stunden Gameplay mit monatlich neuen Quests, Gegenständen, und Abenteuern</li><li>Üben Sie eine Vielzahl von Handwerksfertigkeiten aus, um seltene Reagenzien zu finden, maßgeschneiderte Kleidung anzufertigen, durch geschicktes Handeln mit Ihren Mitspielern große Reichtümer anzuhäufen</li></ul></div><div class="shop" style="height: 17px; width: 100px; top: 545px; left: 105px; position: absolute;">Artikel-Preis: </div><div class="shop" style="height: 17px; width: 185px; top: 545px; left: 215px; position: absolute;">6.66¹ €</div><div style="text-align: right; top: 545px; left: 496px; position: absolute;">¹ = ohne mwst.</div></div>
 </form>
 
 </div>
